@@ -1,0 +1,118 @@
+@font-face {
+  font-family: roboto;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .box {
+    width: 350px;
+    background: linear-gradient(86deg, rgb(45 0 88) 0%, rgb(54 0 158) 100%);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+    box-shadow: 0px 0px 72px 17px rgba(99, 36, 36, 0.75);
+    color: #fff;
+    text-align: center;
+    position: relative;
+    select {
+      padding: 10px;
+      font-size: 17px;
+      outline: none;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    button {
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      padding: 10px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .color-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      div {
+        width: 80px;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.success {
+  width: 370px;
+  height: 90px;
+  position: absolute;
+  top: 39%;
+  left: -3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  box-shadow: 0px 0px 30px 35px rgba(0, 252, 13, 0.3);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  display: none;
+}
+.fail {
+  width: 221px;
+  height: 71px;
+  position: absolute;
+  top: 41%;
+  left: 18%;
+  background-color: red;
+  box-shadow: 0px 0px 30px 35px rgba(252, 0, 0, 0.2);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  font-weight: 100;
+  display: none;
+}
