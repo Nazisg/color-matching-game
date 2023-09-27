@@ -26,6 +26,7 @@ function Start(){
     }, 1000);
   });
 }
+Start()
 function Box() {
   $(".box").html(`
         <h1 class="h1">${RandomRGB()}</h1>
